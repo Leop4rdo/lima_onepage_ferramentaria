@@ -2,7 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-@media (min-width: 720px) {
+@media (max-width: 1024px) {
 	html {
 		font-size: 12px;
 	}

@@ -1,7 +1,5 @@
 .curso_section {
-	background-image: url(/img/bg_corte_dobra_repuxo.png);
-	background-size: contain;
-	background-position: bottom left;
+	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.4);
 	background-blend-mode: darken;
 
@@ -11,8 +9,18 @@
 	color: white;
 }
 
+.curso_section#corte_dobra_repuxo {
+	background-image: url(/img/bg_corte_dobra_repuxo.png);
+	background-position: bottom left;
+}
+
+.curso_section#molde_plastico {
+	background-image: url(/img/bg_moldes_plastico.png);
+	background-position: bottom right;
+}
+
 .curso_section .titulo_container {
-	width: 50%;
+	flex-grow: 1;
 
 	display: flex;
 	flex-direction: column;
@@ -20,15 +28,19 @@
 }
 
 .curso_section .titulo_container h2 {
-	width: 500px;
+	width: 31.5rem;
 	font-size: 3.5rem;
 	font-weight: 700;
 
 	padding-top: 6.25rem;
 }
 
+.curso_section#molde_plastico .titulo_container h2 {
+	text-align: right;
+}
+
 .curso_section .conteudo_container {
-	width: 50%;
+	flex-grow: 1;
 	background-color: #111;
 
 	display: flex;
@@ -39,8 +51,6 @@
 	gap: 3.5rem;
 
 	padding: 3.5rem 0px;
-
-	box-shadow: -0px 0px 64px rgba(0, 0, 0, 0.4);
 }
 
 .curso_section .conteudo_container iframe {
@@ -54,4 +64,30 @@
 .curso_section .conteudo_container p {
 	width: 31.25rem;
 	font-size: 1.5rem;
+}
+
+.curso_section .mobile_only {
+	display: none;
+}
+
+@media (max-width: 1060px) {
+	.curso_section .conteudo_container iframe {
+		width: 400px;
+		height: 280px;
+	}
+}
+
+@media (max-width: 900px) {
+	.curso_section .titulo_container {
+		display: none;
+	}
+
+	.curso_section .mobile_only {
+		display: block;
+		font-size: 3rem;
+		font-weight: 700;
+		text-align: center;
+
+		width: 40%;
+	}
 }
