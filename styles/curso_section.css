@@ -11,12 +11,12 @@
 
 .curso_section#corte_dobra_repuxo {
 	background-image: url(../img/bg_corte_dobra_repuxo.png);
-	background-position: bottom left;
+	background-position: left;
 }
 
 .curso_section#molde_plastico {
 	background-image: url(../img/bg_moldes_plastico.png);
-	background-position: bottom right;
+	background-position: right;
 }
 
 .curso_section .titulo_container {
@@ -27,28 +27,27 @@
 	align-items: center;
 }
 
-.curso_section .titulo_container h2 {
-	width: 31.5rem;
-	font-size: 3.5rem;
+.curso_section h2 {
+	width: 480px;
+	font-size: 3rem;
 	font-weight: 700;
 
 	padding-top: 6.25rem;
 }
 
-.curso_section#molde_plastico .titulo_container h2 {
+.curso_section#molde_plastico h2 {
 	text-align: right;
 }
 
 .curso_section .conteudo_container {
-	flex-grow: 1;
-	background-color: #111;
+	width: 55%;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
-	gap: 3.5rem;
+	gap: 3rem;
 
 	padding: 3.5rem 0px;
 }
@@ -62,32 +61,54 @@
 }
 
 .curso_section .conteudo_container p {
-	width: 31.25rem;
-	font-size: 1.5rem;
+	width: 500px;
+	font-size: 1.25rem;
+	text-align: justify;
 }
 
-.curso_section .mobile_only {
-	display: none;
+.curso_section#corte_dobra_repuxo .conteudo_container {
+	background-image: linear-gradient(to left, #111f 95%, #1110);
 }
 
-@media (max-width: 1060px) {
+.curso_section#molde_plastico .conteudo_container {
+	background-image: linear-gradient(to right, #111f 95%, #1110);
+}
+
+@media (max-width: 1024px) {
 	.curso_section .conteudo_container iframe {
-		width: 400px;
-		height: 280px;
+		width: 350px;
+		height: 245px;
+	}
+
+	.curso_section .conteudo_container p {
+		width: 350px;
+	}
+
+	.curso_section h2 {
+		width: 380px;
 	}
 }
 
 @media (max-width: 900px) {
-	.curso_section .titulo_container {
-		display: none;
+	.curso_section {
+		flex-direction: column;
 	}
 
-	.curso_section .mobile_only {
-		display: block;
-		font-size: 3rem;
-		font-weight: 700;
-		text-align: center;
+	.curso_section#molde_plastico {
+		flex-direction: column-reverse;
+	}
 
-		width: 40%;
+	.curso_section .titulo_container h2,
+	.curso_section#molde_plastico h2 {
+		text-align: center;
+	}
+
+	.curso_section .titulo_container {
+		background-color: #111;
+	}
+
+	.curso_section .conteudo_container {
+		width: 100%;
+		background-color: #111;
 	}
 }
