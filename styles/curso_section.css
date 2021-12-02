@@ -10,12 +10,12 @@
 }
 
 .curso_section#corte_dobra_repuxo {
-	background-image: url(/img/bg_corte_dobra_repuxo.png);
+	background-image: url(../img/bg_corte_dobra_repuxo.png);
 	background-position: bottom left;
 }
 
 .curso_section#molde_plastico {
-	background-image: url(/img/bg_moldes_plastico.png);
+	background-image: url(../img/bg_moldes_plastico.png);
 	background-position: bottom right;
 }
 
