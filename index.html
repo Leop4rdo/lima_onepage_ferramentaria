@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./styles/html.css" />
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/curso_section.css" />
+        <link rel="stylesheet" href="./styles/galeria.css" />
         <link rel="stylesheet" href="./styles/separador.css">
     </head>
     <body>
@@ -67,21 +68,27 @@
         <section id="galeria">
             <h2><img src="./img/engrenagens.png"> galeria <img src="./img/engrenagens.png"></h2>
             
-            <div class="img_slider_container">
-                <div class="slider">
-                    <img src="./img/slider/img_slider_01.jpeg">
-                    <img src="./img/slider/img_slider_02.jpeg">
-                    <img src="./img/slider/img_slider_03.jpeg">
-                    <img src="./img/slider/img_slider_04.jpeg">
-                    <img src="./img/slider/img_slider_05.jpeg">
-                    <img src="./img/slider/img_slider_06.jpeg">
-                    <img src="./img/slider/img_slider_07.jpeg">
-                    <img src="./img/slider/img_slider_08.jpeg">
-                    <img src="./img/slider/img_slider_09.jpeg">
-                    <img src="./img/slider/img_slider_10.jpeg">
+            <div class="container">
+                <div class="img_slider_container">
+                    <div class="slider">
+                        <img src="./img/slider/img_slider_10.jpeg" id="clone_ultima_img">
+                        <img src="./img/slider/img_slider_01.jpeg">
+                        <img src="./img/slider/img_slider_02.jpeg">
+                        <img src="./img/slider/img_slider_03.jpeg">
+                        <img src="./img/slider/img_slider_04.jpeg">
+                        <img src="./img/slider/img_slider_05.jpeg">
+                        <img src="./img/slider/img_slider_06.jpeg">
+                        <img src="./img/slider/img_slider_07.jpeg">
+                        <img src="./img/slider/img_slider_08.jpeg">
+                        <img src="./img/slider/img_slider_09.jpeg">
+                        <img src="./img/slider/img_slider_10.jpeg">
+                        <img src="./img/slider/img_slider_01.jpeg" id="clone_primeira_img">
+                    </div>
                 </div>
-            </div>
 
+                <button class="img_slider_btn" id="next_btn">&gt;</button>
+                <button class="img_slider_btn" id="prev_btn">&lt;</button>
+            </div>
             <img src="./img/engrenagem_unica.png" class="separador" id="left_side">
             <img src="./img/engrenagem_unica.png" class="separador" id="right_side">
         </section>
@@ -94,5 +101,7 @@
         </section>
 
         <section id="escola">escola</section>
+
+        <script src="./scripts/img_slider.js"></script>
     </body>
 </html>
