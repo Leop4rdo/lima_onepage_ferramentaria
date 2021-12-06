@@ -10,21 +10,6 @@ section#galeria {
 	gap: 50px;
 }
 
-section#galeria h2 {
-	color: white;
-	font-size: 3rem;
-	font-weight: 500;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-}
-
-section#galeria h2 > img {
-	width: 3rem;
-}
-
 section#galeria .container {
 	position: relative;
 }
