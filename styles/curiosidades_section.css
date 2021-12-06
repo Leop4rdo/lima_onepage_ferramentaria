@@ -30,11 +30,14 @@ section#curiosidades .card {
 	align-items: center;
 	gap: 25px;
 
-	border-radius: 25px;
-
 	overflow: hidden;
 
 	transition: all 0.5s ease-out;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 25px;
 }
 
 section#curiosidades .card > img {
