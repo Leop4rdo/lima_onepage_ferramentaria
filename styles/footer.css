@@ -1,0 +1,25 @@
+footer {
+    background-color: rgb(17, 17, 17);
+    background-blend-mode: darken;
+	display: flex;
+	flex-direction: row;
+	color: white;
+
+    height: 150px;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3rem;
+
+	padding: 3.5rem 0px;
+}
+
+.footer-equipe{
+    text-align: right;
+
+}
+.footer2{
+    text-align: left;
+}
