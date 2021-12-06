@@ -1,0 +1,14 @@
+h2.titulo_engrenagens {
+	color: white;
+	font-size: 3rem;
+	font-weight: 500;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+h2.titulo_engrenagens > img {
+	width: 3rem;
+}
