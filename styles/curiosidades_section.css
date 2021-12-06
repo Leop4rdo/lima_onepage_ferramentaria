@@ -1,0 +1,65 @@
+section#curiosidades {
+	background-color: #111;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 50px;
+}
+
+section#curiosidades .card_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	width: 100%;
+}
+
+section#curiosidades .card {
+	background-color: white;
+
+	width: 275px;
+	height: 425px;
+	margin: 25px 25px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+
+	border-radius: 25px;
+
+	overflow: hidden;
+
+	transition: all 0.5s ease-out;
+}
+
+section#curiosidades .card > img {
+	height: 200px;
+	transition: all 0.5s ease-out;
+}
+
+section#curiosidades .card > p {
+	width: 225px;
+	text-align: center;
+
+	font-size: 1rem;
+	transition: all 0.5s ease-out;
+}
+
+section#curiosidades .card:hover {
+	width: 325px;
+	height: 475px;
+}
+
+section#curiosidades .card:hover > img {
+	height: 225px;
+}
+
+section#curiosidades .card:hover > p {
+	width: 275px;
+	font-size: 1.25rem;
+}
