@@ -1,0 +1,49 @@
+.oquee_section {
+	background-size: cover;
+	background-color: rgb(17, 17, 17);
+	background-blend-mode: darken;
+
+	display: flex;
+	flex-direction: row;
+
+	color: white;
+}
+
+.oquee_section#oque_e h1 {
+	text-align: left;
+}
+
+.oquee_section .texto_container {
+	width: 55%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	gap: 3rem;
+
+	padding: 3.5rem 0px;
+}
+
+.oquee_section .video_container iframe {
+	border-style: solid;
+	border-color: gray;
+
+	width: 500px;
+	height: 350px;
+    
+    display: flex;
+	position:absolute;
+	top: 0; bottom: 0; left: 1; right: 15;
+	margin: auto;
+
+
+}
+
+.oquee_section .texto_container p {
+	width: 500px;
+	font-size: 1.25rem;
+	text-align: justify;
+}
+
