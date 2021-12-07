@@ -14,3 +14,9 @@ section {
 
 	position: relative;
 }
+
+body {
+	max-width: 100% !important;
+
+	background: #111;
+}

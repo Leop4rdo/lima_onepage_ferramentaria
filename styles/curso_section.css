@@ -29,7 +29,7 @@
 
 .curso_section h2 {
 	width: 480px;
-	font-size: 3rem;
+	font-size: 2.75rem;
 	font-weight: 700;
 
 	padding-top: 6.25rem;
@@ -101,6 +101,7 @@
 	.curso_section .titulo_container h2,
 	.curso_section#molde_plastico h2 {
 		text-align: center;
+		font-size: 2.25rem;
 	}
 
 	.curso_section .titulo_container {
