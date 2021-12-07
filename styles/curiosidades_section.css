@@ -7,6 +7,8 @@ section#curiosidades {
 	align-items: center;
 
 	gap: 50px;
+
+	padding: 100px 0px;
 }
 
 section#curiosidades .card_container {
@@ -15,7 +17,7 @@ section#curiosidades .card_container {
 	justify-content: center;
 	flex-wrap: wrap;
 
-	width: 100%;
+	width: 90%;
 }
 
 section#curiosidades .card {
