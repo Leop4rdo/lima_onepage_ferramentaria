@@ -7,6 +7,7 @@
 	flex-direction: row;
 
 	color: white;
+	padding: 0px;
 }
 
 .curso_section#corte_dobra_repuxo {
@@ -111,5 +112,6 @@
 	.curso_section .conteudo_container {
 		width: 100%;
 		background-color: #111;
+		padding-bottom: 100px;
 	}
 }
