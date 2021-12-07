@@ -2,9 +2,9 @@ section > .separador {
 	z-index: 1;
 
 	position: absolute;
-	bottom: -128px;
+	bottom: -64px;
 
-	transform: translate(-50%, -50%);
+	/* transform: translate(-50%, -50%); */
 
 	width: 128px;
 
@@ -16,15 +16,15 @@ section > .separador#left_side {
 }
 
 section > .separador#right_side {
-	right: -128px;
+	right: 0px;
 }
 
 @keyframes rotate {
 	0% {
-		transform: translate(-50%, -50%) rotate(0deg);
+		transform: /*translate(-50%, -50%)*/ rotate(0deg);
 	}
 
 	100% {
-		transform: translate(-50%, -50%) rotate(180deg);
+		transform: /*translate(-50%, -50%)*/ rotate(180deg);
 	}
 }

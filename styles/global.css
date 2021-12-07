@@ -9,10 +9,12 @@
 }
 
 section {
-	width: 100%;
+	width: 100vw !important;
 	min-height: 100vh;
 
 	position: relative;
+
+	/* padding: 150px 0px; */
 }
 
 body {
