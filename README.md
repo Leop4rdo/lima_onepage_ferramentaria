@@ -19,3 +19,4 @@ Projeto de one page originado para a divulgação dos cursos de ferramentaria(me
 -   <a href="https://github.com/Gabshh">Gabriel Gomes</a>
 -   <a href="https://github.com/Leop4rdo">Leonardo Antunes</a>
 -   <a href="https://github.com/LeoGdc">Leonardo Vivi</a>
+-   <a href="https://github.com/Geeansouza">Gean Souza</a>
