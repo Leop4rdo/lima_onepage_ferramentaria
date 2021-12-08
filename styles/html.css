@@ -1,12 +1,12 @@
 html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 
-	max-width: 100% !important;
+    max-width: 100% !important;
 }
 
 @media (max-width: 1024px) {
-	html {
-		font-size: 14px;
-	}
+    html {
+        font-size: 14px;
+    }
 }

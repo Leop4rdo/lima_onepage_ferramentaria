@@ -1,30 +1,35 @@
 section > .separador {
-	z-index: 1;
+    z-index: 1;
 
-	position: absolute;
-	bottom: -64px;
+    position: absolute;
 
-	/* transform: translate(-50%, -50%); */
+    width: 128px;
 
-	width: 128px;
+    animation: rotate 2s linear infinite;
+}
 
-	animation: rotate 2s linear infinite;
+section > .top {
+    top: -64px;
+}
+
+section > .bottom {
+    bottom: -64px;
 }
 
 section > .separador#left_side {
-	left: 0px;
+    left: -64px;
 }
 
 section > .separador#right_side {
-	right: 0px;
+    right: -64px;
 }
 
 @keyframes rotate {
-	0% {
-		transform: /*translate(-50%, -50%)*/ rotate(0deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
 
-	100% {
-		transform: /*translate(-50%, -50%)*/ rotate(180deg);
-	}
+    100% {
+        transform: rotate(180deg);
+    }
 }
