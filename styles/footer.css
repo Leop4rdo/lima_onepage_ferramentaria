@@ -1,25 +1,37 @@
 footer {
-  background-color: rgb(27, 27, 27);
-  background-blend-mode: darken;
-  display: flex;
-  flex-direction: row;
-  color: white;
+	background-color: #222;
 
-  height: 150px;
+	display: flex;
+	flex-direction: row !important;
+	flex-wrap: wrap;
 
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+	color: white;
 
-  gap: 3rem;
+	min-height: 250px;
 
-  padding: 3.5rem 0px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 25px;
+
+	padding: 25px 0px;
 }
 
-.footer-equipe {
-  text-align: left;
-  padding: 3.5rem 0px;
+footer p#desc {
+	width: 400px;
 }
-.footer-descricao {
-  text-align: right;
+
+footer a {
+	color: #4479ec;
+}
+
+@media (max-width: 480px) {
+	footer {
+		flex-direction: column !important;
+	}
+
+	footer p#desc {
+		width: 200px;
+	}
 }
