@@ -5,27 +5,32 @@
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 100px;
 
   color: white;
 }
 
 .escola_section h1 {
+  
   text-align: left;
 }
 
-h2.titulo-escola > img {
-  width: 3rem;
+h2.titulo_escola > img {
+  width: 1.8rem;
 }
 
 .escola_section .escola_container {
-  width: 55%;
+  width: 500px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
-  gap: 3rem;
+  gap: 1rem;
 
   padding: 3.5rem 0px;
 }
@@ -37,17 +42,13 @@ h2.titulo-escola > img {
   width: 500px;
   height: 350px;
 
-  display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 1;
-  right: 0;
-  margin: auto;
 }
 
-.escola_section .escola_container p {
-  width: 500px;
+.escola_section .escola_container span {
+  width: 400px;
   font-size: 1.25rem;
   text-align: justify;
+  
+  margin-left: 32px;
+  
 }
