@@ -17,7 +17,7 @@
 
 .curso_section#molde_plastico {
     background-image: url(../img/bg_moldes_plastico.png);
-    background-position: right;
+    background-position-x: right -100px;
 }
 
 .curso_section .titulo_container {
@@ -73,6 +73,26 @@
 
 .curso_section#molde_plastico .conteudo_container {
     background-image: linear-gradient(to right, #111f 95%, #1110);
+}
+
+.curso_section .btn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+
+    color: #111;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 0.5s ease-out;
+}
+
+.curso_section .btn:hover {
+    background-color: #ccc;
 }
 
 @media (max-width: 1024px) {
