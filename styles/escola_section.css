@@ -99,4 +99,13 @@ h2.titulo_escola > img {
 	.escola_section {
 		flex-direction: column;
 	}
+	.escola_section .escola_container span {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.escola_section .escola_container {
+		width: 250px;
+	}
 }
