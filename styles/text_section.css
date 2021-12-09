@@ -1,0 +1,139 @@
+.text_section {
+	background-size: cover;
+	background-color: rgb(17, 17, 17);
+	background-blend-mode: darken;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	gap: 100px;
+
+	color: white;
+
+	padding: 100px 0px;
+}
+
+.text_section h2 {
+	font-size: 2rem;
+	width: 100%;
+}
+
+.text_section p {
+	font-size: 1rem;
+	width: 100%;
+}
+
+.text_section h2 > img {
+	width: 1.8rem;
+}
+
+.text_section .container {
+	width: 500px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	gap: 1rem;
+
+	padding: 3.5rem 0px;
+}
+
+.text_section img.exemple {
+	border-style: solid;
+	border-color: gray;
+
+	width: 500px;
+}
+
+.text_section .container span {
+	width: 460px;
+	font-size: 1rem;
+	text-align: justify;
+
+	margin-left: 32px;
+}
+
+@media (max-width: 1080px) {
+	.text_section {
+		gap: 50px;
+	}
+
+	.text_section .container {
+		width: 400px;
+	}
+
+	.text_section img.exemple {
+		width: 400px;
+	}
+
+	.text_section .container span {
+		width: 375px;
+	}
+}
+
+@media (max-width: 900px) {
+	.text_section h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	.text_section {
+		gap: 50px;
+	}
+
+	.text_section .container {
+		width: 500px;
+
+		text-align: center;
+	}
+
+	.text_section img#escola {
+		width: 500px;
+	}
+
+	.text_section .container span {
+		width: 275px;
+	}
+}
+
+@media (max-width: 720px) {
+	.text_section {
+		flex-direction: column;
+	}
+	.text_section .container span {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.text_section .container {
+		width: 350px;
+	}
+
+	.text_section img.exemple {
+		width: 350px;
+	}
+}
+
+@media (max-width: 420px) {
+	.text_section {
+		flex-direction: column;
+	}
+	.text_section .container span {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.text_section .container {
+		width: 300px;
+	}
+
+	.text_section img.exemple {
+		width: 300px;
+	}
+}
