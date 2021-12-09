@@ -98,7 +98,7 @@ section#galeria .img_slider_btn:hover {
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 380px) {
 	section#galeria .img_slider_container {
 		width: 250px;
 		height: 200px;
