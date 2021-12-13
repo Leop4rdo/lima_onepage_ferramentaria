@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="./styles/galeria.css" />
         <link rel="stylesheet" href="./styles/curiosidades_section.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -45,13 +47,13 @@
         </header>
 
         <section id="home">
-            <h1>
+            <h1 data-aos="fade-up">
                 <img src="./img/engrenagens.png">
                 Ferramentaria
                 <img src="./img/engrenagens.png">
             </h1>
-            <span>Senai prof° Vicente Amato</span>
-            <span>Jandira</span>
+            <span data-aos="fade" data-aos-delay="250">Senai prof° Vicente Amato</span>
+            <span data-aos="fade" data-aos-delay="250">Jandira</span>
 
             <a href="#oque_e" class="roll_down_btn">
                 <img src="./img/roll_down_arrow.png">
@@ -60,12 +62,12 @@
 
         <section class="text_section" id="oque_e">
             <div class="container">
-                <h2>
+                <h2 data-aos="fade-right">
                     <img src="./img/engrenagem_unica.png" />
                     O que é ferramentaria?
                 </h2>
 
-                <p>
+                <p data-aos="fade" data-aos-delay="250">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis mi eu accumsan consequat. Fusce id sem faucibus, posuere
                     ipsum nec, eleifend ligula. Ut scelerisque et massa qu is tempus. Nullam ullamcorper rutrum mauris non efficitur. Sus pendisse
                     finibus magna non felis ornare, vel tempus arcu euism od. Cras sit amet arcu ante. Duis pretium ante sed diam mattis iaculis at
@@ -73,7 +75,12 @@
                 </p>
             </div>
 
-            <img src="./img/oque_e.png" alt="Exemplo de molde" class="exemple">
+            <img src="./img/oque_e.png" 
+                alt="Exemplo de molde" 
+                class="exemple" 
+                data-aos="fade-left" 
+                data-aos-delay="500"
+            />
 
             <img src="./img/engrenagem_unica.png" class="separador bottom" id="left_side" />
             <img src="./img/engrenagem_unica.png" class="separador bottom" id="right_side" />
@@ -81,19 +88,29 @@
 
         <section class="curso_section" id="corte_dobra_repuxo">
             <div class="titulo_container">
-                <h2>FERRAMENTEIRO DE CORTE, DOBRA E REPUXO</h2>
+                <h2 data-aos="fade-right" >
+                    FERRAMENTEIRO DE CORTE, DOBRA E REPUXO
+                </h2>
             </div>
             <div class="conteudo_container">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                        data-aos="fade"
+                        data-aos-delay="250">
+                </iframe>
 
-                <p>
+                <p data-aos="fade" data-aos-delay="250">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae magna eget tortor aliquam tempor. Sed in fringilla
                     nulla. Nullam feugiat porttitor euismod. Fusce eu pretium quam, eu aliquam quam. Morbi pellentesque a orci ut facilisis. Nulla
                     tortor lorem, pulvinar et congue et, lacinia et ligula. Suspendisse lorem ex, dignissim in ultricies vitae, blandit sed orci. Sed
                     ac quam in lorem porta mattis. Vestibulum aliquet justo a enim sodales, nec sagittis tellus ultricies.
                 </p>
 
-                <a href="https://jandira.sp.senai.br/curso/85333/127/ferramenteiro-de-corte-dobra-e-repuxo" class="btn">Veja Mais!</a>
+                <a  data-aos="fade" 
+                    data-aos-delay="250" 
+                    href="https://jandira.sp.senai.br/curso/85333/127/ferramenteiro-de-corte-dobra-e-repuxo" 
+                    class="btn">
+                    Veja Mais!
+                </a>
             </div>
 
             <img src="./img/engrenagem_unica.png" class="separador bottom" id="left_side" />
@@ -104,19 +121,28 @@
 
         <section class="curso_section" id="molde_plastico">
             <div class="conteudo_container">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    data-aos="fade" data-aos-delay="250">
+                </iframe>
 
-                <p>
+                <p data-aos="fade" data-aos-delay="250">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae magna eget tortor aliquam tempor. Sed in fringilla
                     nulla. Nullam feugiat porttitor euismod. Fusce eu pretium quam, eu aliquam quam. Morbi pellentesque a orci ut facilisis. Nulla
                     tortor lorem, pulvinar et congue et, lacinia et ligula. Suspendisse lorem ex, dignissim in ultricies vitae, blandit sed orci. Sed
                     ac quam in lorem porta mattis. Vestibulum aliquet justo a enim sodales, nec sagittis tellus ultricies.
                 </p>
 
-                <a href="https://jandira.sp.senai.br/curso/85334/127/ferramenteiro-de-moldes-para-plasticos" class="btn">Veja Mais!</a>
+                <a href="https://jandira.sp.senai.br/curso/85334/127/ferramenteiro-de-moldes-para-plasticos" 
+                    class="btn"
+                    data-aos="fade" 
+                    data-aos-delay="250">
+                    Veja Mais!
+                </a>
             </div>
             <div class="titulo_container">
-                <h2>FERRAMENTEIRO DE MOLDES PARA PLASTICO</h2>
+                <h2 data-aos="fade-left">
+                    FERRAMENTEIRO DE MOLDES PARA PLASTICO
+                </h2>
             </div>
 
             <img src="./img/engrenagem_unica.png" class="separador bottom" id="left_side" />
@@ -126,13 +152,13 @@
         </section>
 
         <section id="galeria">
-            <h2 class="titulo_engrenagens">
+            <h2 class="titulo_engrenagens" data-aos="fade-up">
                 <img src="./img/engrenagens.png" />
                 galeria
                 <img src="./img/engrenagens.png" />
             </h2>
 
-            <div class="container">
+            <div class="container" data-aos="fade" data-aos-delay="250">
                 <div class="img_slider_container">
                     <div class="slider">
                         <img src="./img/slider/img_slider_10.jpeg" id="clone_ultima_img" />
@@ -161,14 +187,14 @@
         </section>
 
         <section id="curiosidades">
-            <h2 class="titulo_engrenagens">
+            <h2 class="titulo_engrenagens" data-aos="fade-up">
                 <img src="./img/engrenagens.png" />
                 Curiosidades
                 <img src="./img/engrenagens.png" />
             </h2>
 
             <div class="card_container">
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-delay="250">
                     <img src="./img/curiosidade_moedas.jpg" />
                     <p>
                         A Maioria dos objetos metálicos utilizados no dia a dia são modelados por ferramentas criadas por ferramenteiros, as moedas
@@ -176,7 +202,7 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-delay="250">
                     <img src="./img/curiosidade_teclado.jpg" />
                     <p>
                         Objetos maiores como uma estrutura de uma cadeira de escritório, gabinetes de computadores, teclados e mouses também estão
@@ -184,7 +210,7 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="flip-left" data-aos-delay="250">
                     <img src="./img/curiosidade_controle.jpg" />
                     <p>
                         Garrafas e outros objetos plasticos são feitos com moldes que foram criados por ferramenteiros, inclusive a carcaça dos
@@ -201,18 +227,18 @@
 
         <section class="text_section" id="escola">
             <div class="container">
-                <h2 class="titulo_escola">
+                <h2 class="titulo_escola" data-aos="fade-right">
                     <img src="./img/engrenagem_unica.png" />
                     Senai Prof° Vicente Amato
                 </h2>
 
-                <span>Localização: Rua Elton Silva, 905 - Centro - Jandira/SP - CEP 06600-025</span>
-                <span> Telefone: (11) 4772-4700 </span>
-                <span>E-mail: senaijandira@sp.senai.br</span>
-                <span> Site oficial: jandira.sp.senai.br</span>
+                <span data-aos="fade" data-aos-delay="250">Localização: Rua Elton Silva, 905 - Centro - Jandira/SP - CEP 06600-025</span>
+                <span data-aos="fade" data-aos-delay="250"> Telefone: (11) 4772-4700 </span>
+                <span data-aos="fade" data-aos-delay="250">E-mail: senaijandira@sp.senai.br</span>
+                <span data-aos="fade" data-aos-delay="250"> Site oficial: jandira.sp.senai.br</span>
             </div>
 
-            <img src="./img/imagem-escola.png" class="exemple"/>
+            <img src="./img/imagem-escola.png" class="exemple" data-aos="fade-left" data-aos-delay="250"/>
             
             <img src="./img/engrenagem_unica.png" class="separador top" id="left_side" />
             <img src="./img/engrenagem_unica.png" class="separador top" id="right_side" />
@@ -240,5 +266,9 @@
         </footer>
 
         <script src="./scripts/img_slider.js"></script>
+        <!-- <script src="bower_components/aos/dist/aos.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./scripts/aos_config.js"></script>
+      
     </body>
 </html>
