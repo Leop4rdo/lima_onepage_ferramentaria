@@ -6,8 +6,19 @@ const nextBtn = document.querySelector("#next_btn");
 
 let currentImgIndex = 1;
 
+let timer;
+
 function slide() {
     slider.style.transform = `translateX(${ (-imgs[0].clientWidth * currentImgIndex) }px)`;
+
+    window.clearInterval(timer);
+    timer = setInterval(() => {
+        if ( currentImgIndex >= imgs.length -1 ) return;
+    
+            slider.style.transition = "transform .5s ease-out";
+            currentImgIndex++;
+            slide();
+    }, 3000);
 }
 
 
@@ -40,3 +51,4 @@ slider.addEventListener("transitionend", () => {
         slide();
     }
 });
+
