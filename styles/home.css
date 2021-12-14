@@ -4,6 +4,8 @@ section#home {
 	background-color: #0007;
 	background-blend-mode: darken;
 	background-position: 30%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	color: white;
 
