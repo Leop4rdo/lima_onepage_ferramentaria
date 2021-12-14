@@ -1,6 +1,6 @@
 # OnePage Ferramentaria
 
-Projeto de one page originado para a divulgação dos cursos de ferramentaria(mecânica) do <a href="https://www.sp.senai.br/">SENAI</a>, feito com fins didáticos para o curso de desenvolvimento de sistemas do <a href="https://jandira.sp.senai.br/">SENAI Jandira</a>, com orientação do professor <a href="https://github.com/fernandoleonid">Fernando Leonid</a>.
+Projeto de onepage realizado para a divulgação dos cursos de ferramentaria (mecânica) do <a href="https://www.sp.senai.br/">SENAI</a>, feito com fins didáticos durante o curso de desenvolvimento de sistemas do <a href="https://jandira.sp.senai.br/">SENAI Jandira</a>, com orientação do professor <a href="https://github.com/fernandoleonid">Fernando Leonid</a> na materia de linguagem de marcação.
 
 ## O que é uma onePage?
 
