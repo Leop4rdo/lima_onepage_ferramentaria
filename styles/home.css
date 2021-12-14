@@ -4,6 +4,8 @@ section#home {
 	background-color: #0007;
 	background-blend-mode: darken;
 	background-position: 30%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	color: white;
 
@@ -32,6 +34,8 @@ section#home h1 > img {
 
 section#home span {
 	font-size: 1.25rem;
+	font-weight: 300;
+	color: #ddd;
 }
 
 section#home .roll_down_btn > img {
@@ -81,7 +85,7 @@ section#home .roll_down_btn:hover {
 
 @media (max-width: 480px) {
 	section#home h1 {
-		font-size: 2.5rem;
+		font-size: 2.75rem;
 	}
 
 	section#home h1 > img {

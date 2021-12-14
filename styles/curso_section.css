@@ -2,6 +2,8 @@
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.4);
 	background-blend-mode: darken;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 
 	display: flex;
 	flex-direction: row;
