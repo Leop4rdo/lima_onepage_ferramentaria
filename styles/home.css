@@ -1,94 +1,99 @@
 section#home {
-	background-image: url("../img/bg_home_placeholder.png");
-	background-size: cover;
-	background-color: #0007;
-	background-blend-mode: darken;
-	background-position: 30%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+    background-image: url("../img/home_ferramentaria.gif");
+    background-size: cover;
+    background-color: #0007;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-	color: white;
+    color: white;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section#home h1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 
-	font-size: 5rem;
-	font-weight: normal;
-	letter-spacing: 8px;
+    font-size: 5rem;
+    font-weight: normal;
+    letter-spacing: 8px;
 
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 section#home h1 > img {
-	width: 5rem;
+    width: 5rem;
 }
 
 section#home span {
-	font-size: 1.25rem;
-	font-weight: 300;
-	color: #ddd;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #ddd;
 }
 
 section#home .roll_down_btn > img {
-	width: 80px;
+    width: 80px;
 }
 
 section#home .roll_down_btn {
-	position: absolute;
-	bottom: 80px;
-	left: 50%;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
 
-	transform: translate(-50%, -50%) scale(0.75);
+    transform: translate(-50%, -50%) scale(0.75);
 
-	animation: flash 1s linear infinite;
+    animation: flash 1s linear infinite;
 
-	transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
 }
 
 section#home .roll_down_btn:hover {
-	transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 @keyframes flash {
-	0% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 1;
+    }
 
-	50% {
-		opacity: 1;
-	}
+    50% {
+        opacity: 1;
+    }
 
-	75% {
-		opacity: 0;
-	}
+    75% {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 720px) {
-	section#home h1 {
-		font-size: 3rem;
-		letter-spacing: 4px;
-	}
+    section#home h1 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
 
-	section#home h1 > img {
-		width: 3rem;
-	}
+    section#home h1 > img {
+        width: 3rem;
+    }
 }
 
 @media (max-width: 480px) {
-	section#home h1 {
-		font-size: 2.75rem;
-	}
+    section#home h1 {
+        font-size: 2.75rem;
+    }
 
-	section#home h1 > img {
-		display: none;
-	}
+    section#home h1 > img {
+        display: none;
+    }
+
+    section#home {
+        background-image: url("../img/bg_home_mobile.jpg");
+        background-position: 45%;
+    }
 }

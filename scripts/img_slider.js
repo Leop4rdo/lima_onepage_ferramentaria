@@ -8,23 +8,24 @@ let currentImgIndex = 1;
 
 let timer;
 
+slide();
+
 function slide() {
-    slider.style.transform = `translateX(${ (-imgs[0].clientWidth * currentImgIndex) }px)`;
+    slider.style.transform = `translateX(${-imgs[1].clientWidth * currentImgIndex}px)`;
 
     window.clearInterval(timer);
     timer = setInterval(() => {
-        if ( currentImgIndex >= imgs.length -1 ) return;
-    
-            slider.style.transition = "transform .5s ease-out";
-            currentImgIndex++;
-            slide();
+        if (currentImgIndex >= imgs.length - 1) return;
+
+        slider.style.transition = "transform .5s ease-out";
+        currentImgIndex++;
+        slide();
     }, 3000);
 }
 
-
 // event listeners
 nextBtn.addEventListener("click", () => {
-    if ( currentImgIndex >= imgs.length -1 ) return;
+    if (currentImgIndex >= imgs.length - 1) return;
 
     currentImgIndex++;
     slider.style.transition = "transform .5s ease-out";
@@ -32,7 +33,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 prevBtn.addEventListener("click", () => {
-    if ( currentImgIndex <= 0 ) return;
+    if (currentImgIndex <= 0) return;
 
     slider.style.transition = "transform .5s ease-out";
     currentImgIndex--;
@@ -42,7 +43,7 @@ prevBtn.addEventListener("click", () => {
 slider.addEventListener("transitionend", () => {
     if (imgs[currentImgIndex].id === "clone_ultima_img") {
         slider.style.transition = "none";
-        currentImgIndex = imgs.length -2;
+        currentImgIndex = imgs.length - 2;
         slide();
     }
     if (imgs[currentImgIndex].id === "clone_primeira_img") {
@@ -51,4 +52,3 @@ slider.addEventListener("transitionend", () => {
         slide();
     }
 });
-
